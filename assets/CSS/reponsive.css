@@ -1,0 +1,115 @@
+/* IPAD media */
+
+/* PC */
+@media (min-width: 1024px)
+{
+  
+}
+
+/* Table */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  nav {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px)
+{
+  .label2, .label2_2,
+  .label3,
+  .section-4,
+  .section5,
+  .get-temp,
+  .image-email,
+  .Add-domain,
+  .Contact_Us,
+  .FQA,
+  .PP,
+  .reviews,
+  .API,
+  .label1 {
+    width: 90%;
+
+  }
+
+  .nav_1 .subnav_1 {
+    left: -60px;
+  }
+
+  .image-lager .image-picture img,
+  .image-lager {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 740px)
+{
+  
+  .header {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .icon {
+    display: block;
+  }
+}
+
+
+@media (min-width: 741px) {
+  nav {
+      display: block !important; /* Luôn hiển thị navigation bar trên màn hình lớn */
+  }
+} 
+
+@media (max-width: 570px) {
+  .text-header,
+  .container1,
+  .container2 {
+    padding: 0 5px;
+  }
+
+  .label2 {
+    padding: 31px 5px 36px 5px;
+  }
+
+  .Subjec,
+  .detail .text,
+  .time1
+   {
+    display: none;
+  }
+
+  .label2 .detail {
+    width: 0 !important;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .label2_2-table {
+    border-right: 0px;
+    width: 100%;
+  }
+  
+  .label2_2-detail {
+    display: none;
+  }
+
+  .foot-img {
+    display: none;
+  }
+
+}
