@@ -1,0 +1,226 @@
+/* IPAD media */
+
+/* PC */
+@media (min-width: 1024px)
+{
+  
+}
+
+/* Table */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  nav {
+    display: block;
+  }
+
+  .label2, .label2_2,
+  .label3,
+  .section-4,
+  .section5,
+  .get-temp,
+  .image-email,
+  .Add-domain,
+  .Contact_Us,
+  .FQA,
+  .PP,
+  .reviews,
+  .API,
+  .label1 {
+    width: 90%;
+
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 800px)
+{
+  .label2, .label2_2,
+  .label3,
+  .section-4,
+  .section5,
+  .get-temp,
+  .image-email,
+  .Add-domain,
+  .Contact_Us,
+  .FQA,
+  .PP,
+  .reviews,
+  .API,
+  .label1 {
+    width: 90%;
+
+  }
+
+  .nav_1 .subnav_1 {
+    left: -60px;
+  }
+
+  .image-lager .image-picture img,
+  .image-lager {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 740px)
+{
+  
+  .header {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .icon {
+    display: block;
+  }
+
+  .text-header,
+  .container1,
+  .container2  {
+    padding: 0 60px;
+  }
+}
+
+
+@media (min-width: 741px) {
+  nav {
+      display: block !important; /* Luôn hiển thị navigation bar trên màn hình lớn */
+  }
+} 
+
+@media (max-width: 570px) {
+  .text-header,
+  .container1,
+  .container2 {
+    padding: 0 5px;
+  }
+
+  .label2 {
+    padding: 31px 5px 36px 5px;
+  }
+
+  .Subjec,
+  .detail .text,
+  .time1
+   {
+    display: none;
+  }
+
+  .label2 .detail {
+    width: 0 !important;
+  }
+
+  .section-half {
+    flex-wrap: wrap;
+  }
+  
+  .section-half .section-half_1 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .label2, .label2_2,
+  .label3,
+  .section-4,
+  .section5,
+  .get-temp,
+  .image-email,
+  .Add-domain,
+  .Contact_Us,
+  .FQA,
+  .PP,
+  .reviews,
+  .API,
+  .label1 {
+    width: 95%;
+
+  }
+
+  .text-header .text1 {
+    transform: translateX(0);
+  }
+
+  .text-header .image {
+    display: none;
+  }
+
+  .label2_2-table {
+    border-right: 0px;
+    width: 100%;
+  }
+  
+  .container1 {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 16px;
+  }
+
+  .container1 .select {
+    width: 100%;
+  }
+
+  .container1 .time {
+    margin: auto;
+  }
+
+  .container2 {
+    flex-wrap: wrap;
+  }
+
+  .container2 .container2-small {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    gap: 16px ;
+  }
+
+  .container2 .create-email {
+    width: 80%;
+    margin: auto;
+  }
+
+  .container2 .button-copy {
+    margin: auto;
+  }
+
+  .container2 .button-reset{
+    margin: auto;
+  }
+  
+  
+
+  .label2_2-detail {
+    display: none;
+  }
+
+  .menu_left_2,
+  .menu-right_1,
+  .menu-right_2 {
+    display: none;
+  }
+
+  .foot-img {
+    display: none;
+  }
+
+  .section-container {
+    width: 100%;
+  }
+
+  #m79 {
+    word-wrap: break-word;
+  }
+
+}
