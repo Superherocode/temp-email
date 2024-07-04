@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Email</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- header start -->
+  <nav class=" fixed top-0 right-0 left-0 md:flex md:justify-between md:items-center md:px-[50px] bg-white shadow-md rounded-b-3xl">
+    <div class="flex items-center justify-between px-6 h-[64px]">
+      <a href="index.html"><img src="./asset/Frame 69.jpg" alt=""></a>
+      <span class="text-2xl md:hidden">
+        <i class="fa-solid fa-bars cursor-pointer" id="menu-toggle"></i>
+      </span>
+    </div>
+    
+    <div id="menu" class="hidden bg-white text-base font-medium md:inline-block  text-[#5D6165] ">
+      <ul class="md:flex md:flex-row items-center font-bold leading-[64px] text-[18px] md:text-[16px]">
+        <li class=" px-[10px] hover:bg-[#B1B1B1] cursor-pointer"><a href="add-domain.html">Add domain</a></li>
+        <li class=" px-[10px] hover:bg-[#B1B1B1] cursor-pointer"><a href="articles.html">Articles</a></li>
+        <li class=" px-[10px] hover:bg-[#B1B1B1] cursor-pointer"><a href="contact-us.html">Contact Us</a></li>
+        <li class=" px-[10px] hover:bg-[#B1B1B1] cursor-pointer"><a href="API.html">API</a></li>
+        <li class=" px-[10px] hover:bg-[#B1B1B1] cursor-pointer"><a href="#" class="mr-1">English</a><i class="fa-solid fa-caret-down"></i></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      var icon = this;
+    
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        menu.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+  </script>
+  <!-- header end -->
+
+  <!-- Foot start -->
+  <div id="foot" class="fixed inset-x-0 bottom-0 flex justify-between items-center font-semibold text-[#5D6165] max-[768px]:px-4 md:px-[150px] h-[64px] bg-white rounded-t-3xl">
+    <div class="max-[400px]:hidden">
+      <img src="./asset/Group 10.png" alt="">
+    </div>
+    <div class="flex ">
+      <p class="hover:text-[#148EFF] hover:underline"><a href="privacy-policy.html">Privacy Policy</a></p>
+      <p class="sm:mx-8 mx-3 hover:text-[#148EFF] hover:underline"><a href="FAQ.html">FAQ</a></p>
+      <p class="hover:text-[#148EFF] hover:underline"><a href="reviews.html">Reviews</a></p>
+    </div>
+    <div id="foot-to-top" class="flex items-center cursor-pointer ml-2 text-center">
+      <p>Go to top</p>
+      <img src="./asset/arrow-top.png" alt="">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if ($(this).scrollTop())  {
+          $('#foot').fadeIn();
+        }else {
+          $('#foot').fadeOut();
+        }
+      })
+      $("#foot-to-top").click(function(){
+        $('html, body').animate({
+          scrollTop: 0
+        }, 300);
+      });
+    });
+  </script>
+  <!-- foot end -->
+
+  <!-- section-7_start -->
+  <div class="flex flex-col items-center py-[184px]">
+    <h1 class="text-[32px] font-semibold mb-12">Privacy Policy</h1>
+    <div class="bg-white rounded-2xl w-[940px] pt-[28px] pr-[25px] pl-[31px] pb-8 max-[1024px]:w-[95%]">
+      <p class="mb-6">Temp Mail service is not just a one-off designed project. 10 Minutes Email has ambitious plans to further improve its service.</p>
+      <p class="mb-6">We strive for the ideal in order to achieve as close as possible perfection. Your suggestions and comments are very useful. We take everything into account and implement useful suggestions into standard practice.</p>
+      <p class="mb-6">Do you like our anonymous e-mail service? You can suggest our service to other users in a reviews. If you can think of ways to assist us to achieve perfection, your comments will allow our joint efforts to make the service more convenient, user friendly, and meet the needs of other users requiring a 10 min disposable email address</p>
+      <p class="">We invite you to help us to improve our services. We offer you the most secure anonymous email and most comfortable user interface.</p>
+    </div>
+  </div>
+  <!-- section-7_end -->
+  
+</body>
+</html>
